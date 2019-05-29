@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<fx:root id="AnchorPane" fx:id="SignUp" prefHeight="647.0" prefWidth="367.0" styleClass="mainFxmlClass" stylesheets="@../../../style/admin_login.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/com/style/admin_login.css" />
+    </stylesheets>
+    <children>
+        <Label fx:id="label" layoutX="137.0" layoutY="175.0" minHeight="16" minWidth="69" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Add New User" />
+        <Label fx:id="firstNameLabel" layoutX="21.0" layoutY="209.0" prefHeight="17.0" prefWidth="86.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="First Name" textFill="#07010d">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfFirstName" layoutX="141.0" layoutY="209.0" prefHeight="25.0" prefWidth="207.0" styleClass="label_title">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Label fx:id="lastNameLabel" layoutX="21.0" layoutY="270.0" prefHeight="17.0" prefWidth="87.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Last Name" textFill="#0d0117">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="emailLabel" layoutX="21.0" layoutY="330.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Email Address" textFill="#100222">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="passwardLabel" layoutX="21.0" layoutY="390.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Password" textFill="#100222">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="genderLabel" layoutX="22.0" layoutY="454.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Gender" textFill="#100222">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="tfLastName" layoutX="141.0" layoutY="273.0" prefHeight="25.0" prefWidth="207.0" styleClass="label_title" />
+        <TextField fx:id="tfEmail" layoutX="141.0" layoutY="333.0" prefHeight="25.0" prefWidth="207.0" styleClass="label_title" />
+        <TextField fx:id="tfPassword" layoutX="141.0" layoutY="393.0" prefHeight="25.0" prefWidth="207.0" styleClass="label_title" />
+        <RadioButton fx:id="rbMale" layoutX="144.0" layoutY="453.0" mnemonicParsing="false" styleClass="label_title" text="Male">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="rbFemale" layoutX="261.0" layoutY="453.0" mnemonicParsing="false" styleClass="label_title" text="Female" textFill="#180225">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <Label layoutX="19.0" layoutY="508.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Country" textFill="#100222">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="bSignupUser" layoutX="221.0" layoutY="567.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="120.0" stylesheets="@../../../style/button.css" text="Sign Up User" textFill="#090114" AnchorPane.rightAnchor="27.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <HBox fx:id="hbMenu" layoutX="1.0" layoutY="2.0" prefHeight="48.0" prefWidth="367.0" />
+      <ComboBox fx:id="country" layoutX="137.0" layoutY="503.0" prefHeight="25.0" prefWidth="216.0" promptText="Enter Your Country" />
+      <ImageView fx:id="logo" fitHeight="120.0" fitWidth="200.0" layoutX="136.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/img/HipChatIcon.png" />
+         </image>
+      </ImageView>
+      
+      
+    </children>
+</fx:root>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="chatXSL.xsl"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<chat xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+      xs:noNamespaceSchemaLocation="chatSchema.xsd">
+    <message date="2016/02/01 19:35:58">
+        <content>shall@jets.com :nessma</content>
+    </message>
+  
+
+</chat>

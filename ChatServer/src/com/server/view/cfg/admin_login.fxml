@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" minHeight="649.0" minWidth="370.0" prefHeight="670.0" prefWidth="370.0" styleClass="mainFxmlClass" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/com/style/admin_login.css" />
+        <URL value="@/com/style/button.css" />
+    </stylesheets>
+    <children>
+        <AnchorPane minHeight="649.0" minWidth="370.0" prefHeight="649.0" prefWidth="370.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="23.0" layoutY="242.0" minHeight="-Infinity" minWidth="-Infinity" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Email" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="300.0" />
+                <Label layoutX="7.0" layoutY="322.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="61.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Password" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="284.0" />
+           
+                <TextField id="text-input" fx:id="tfEmail" alignment="CENTER" layoutX="79.0" layoutY="238.0" prefHeight="25.0" prefWidth="258.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="bonga@jets.com" AnchorPane.leftAnchor="79.0" AnchorPane.rightAnchor="33.0" />
+                <Button fx:id="bLogin" layoutX="131.0" layoutY="397.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="113.0" styleClass="button-0" stylesheets="@../../../style/button.css" text="Login" AnchorPane.leftAnchor="131.0" AnchorPane.rightAnchor="126.0" />
+                <ImageView fx:id="ivLogo" fitHeight="150.0" fitWidth="200.0" layoutX="126.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="121.83505249023438">
+                    <image>
+                        <Image url="/img/logo.png" />
+                    </image>
+                </ImageView>
+                <PasswordField id="text-input" fx:id="tfPassword" alignment="CENTER" layoutX="79.0" layoutY="318.0" prefHeight="25.0" prefWidth="258.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="bonga" AnchorPane.leftAnchor="79.0" AnchorPane.rightAnchor="33.0" />
+            </children>
+         <effect>
+            <Glow />
+         </effect>
+        </AnchorPane>
+    </children>
+</fx:root>

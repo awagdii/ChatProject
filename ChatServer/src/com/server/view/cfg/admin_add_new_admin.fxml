@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" fx:id="mainScreen" prefHeight="639.0" prefWidth="390.0" styleClass="mainFxmlClass" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/com/style/admin_login.css" />
+    </stylesheets> 
+    <children>
+        <Label layoutX="7.0" layoutY="214.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Admin Name" />
+        <Label layoutX="121.0" layoutY="104.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Add New Admin" />
+        <Label layoutX="8.0" layoutY="282.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Admin Email" />
+        <Label layoutX="2.0" layoutY="341.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Admin Password" />
+        <Button fx:id="bAdminAdd" layoutX="262.0" layoutY="475.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" styleClass="button-0" stylesheets="@../../../style/button.css" text="Add" />
+        <Button fx:id="bAdminCancel" layoutX="33.0" layoutY="475.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="87.0" styleClass="button-0" stylesheets="@../../../style/button.css" text="Cancel" />
+        <TextField fx:id="tfAdminName" alignment="CENTER" layoutX="124.0" layoutY="210.0" prefHeight="25.0" prefWidth="241.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" />
+        <TextField fx:id="tfAdminEmail" alignment="CENTER" layoutX="124.0" layoutY="277.0" prefHeight="25.0" prefWidth="241.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" />
+        <HBox fx:id="hbMenu" layoutX="-1.0" prefHeight="69.0" prefWidth="350.0" />
+        <Text fx:id="tErrorMessage" layoutX="99.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="label_title" />
+        <PasswordField fx:id="tfAdminPassword" alignment="CENTER" layoutX="122.0" layoutY="338.0" prefHeight="25.0" prefWidth="241.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" />
+    </children>
+    <effect>
+        <Glow />
+    </effect>
+</fx:root>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" prefHeight="400.0" prefWidth="600.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextArea fx:id="myTextArea" editable="false" layoutX="23.0" layoutY="81.0" prefHeight="278.0" prefWidth="541.0" />
+      <Text layoutX="23.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Have Offline Messages">
+         <font>
+            <Font name="Arabic Typesetting" size="34.0" />
+         </font>
+      </Text>
+   </children>
+   <effect>
+      <Lighting>
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+         <light>
+            <Light.Distant />
+         </light>
+      </Lighting>
+   </effect>
+</fx:root>

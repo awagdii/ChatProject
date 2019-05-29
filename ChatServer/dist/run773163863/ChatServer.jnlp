@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ChatServer.jnlp">
+  <information>
+    <title>ChatServer</title>
+    <vendor>Shall</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="8.0+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ChatServer.jar" size="2636976" download="eager" />
+    <jar href="lib/TrayNotification.jar" size="41019" download="eager" />
+    <jar href="lib/Undecorator.jar" size="195572" download="eager" />
+    <jar href="lib/ojdbc6.jar" size="2152137" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="ChatServer" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="com.server.main.ChatServer"  name="ChatServer" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" prefHeight="200.0" prefWidth="500.0" styleClass="errorDialog" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/com/style/dialog.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="190.0" fitWidth="181.0" layoutX="309.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/error.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="tDialogMessage" layoutX="58.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" textAlignment="CENTER" wrappingWidth="236.13671875" />
+      <Button fx:id="bDialogOk" layoutX="134.0" layoutY="126.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Ok" />
+   </children>
+</fx:root>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" prefHeight="670.0" prefWidth="200.0" styleClass="mainFxmlClass" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/com/style/admin_login.css" />
+    </stylesheets>
+    <children>
+        <HBox fx:id="hbMenu" prefHeight="49.0" prefWidth="400.0" />
+        <Label layoutX="49.0" layoutY="138.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Online users">
+            <font>
+                <Font name="System Bold Italic" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="24.0" layoutY="414.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Total number of users">
+            <font>
+                <Font size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="47.0" layoutY="224.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Female users">
+            <font>
+                <Font name="System Bold Italic" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="53.0" layoutY="315.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Male users">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <Hyperlink fx:id="hlStatisticsAdvanced" layoutX="160.0" layoutY="557.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;" text="Check More Advanced Statistics" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="8.0">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect></Hyperlink>
+        <Button fx:id="bStatisticsBack" layoutX="7.0" layoutY="551.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="109.0" styleClass="button-0" stylesheets="@../../../style/button.css" text="Back">
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../../img/small/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label layoutX="124.0" layoutY="78.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Preliminary Statistics">
+            <font>
+                <Font name="System Bold Italic" size="12.0" />
+            </font>
+        </Label>
+        <Label fx:id="tStatisticsOnlineUsersNumber" layoutX="278.0" layoutY="138.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Text">
+            <font>
+                <Font name="System Bold Italic" size="21.0" />
+            </font>
+        </Label>
+        <Label fx:id="tStatisticsFemaleUsersNumber" layoutX="279.0" layoutY="225.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Text">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="tStatisticsMaleUsersNumber" layoutX="276.0" layoutY="314.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Text">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label fx:id="tStatisticsTotalUsersNumber" layoutX="275.0" layoutY="413.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Text">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <ImageView fx:id="ivStatisticsOnlineUsers" fitHeight="25.0" fitWidth="30.0" layoutX="191.0" layoutY="132.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../img/small/online.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="ivStatisticsFemaleUsers" fitHeight="25.0" fitWidth="30.0" layoutX="189.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../img/small/female.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="ivStatisticsMaleUsers" fitHeight="25.0" fitWidth="30.0" layoutX="189.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../img/small/male.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="ivStatisticsTotalUsersNumber" fitHeight="25.0" fitWidth="30.0" layoutX="186.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../img/small/group.png" />
+            </image>
+        </ImageView>
+    </children>
+</fx:root>

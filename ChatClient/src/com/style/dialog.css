@@ -1,0 +1,10 @@
+.errorDialog{
+    -fx-background-image: url("/img/dialogue.jpg");
+    -fx-text-color: #ffffff;
+}
+.text{
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-fill: #ffffff;
+    -fx-font: 30 andalus;
+}

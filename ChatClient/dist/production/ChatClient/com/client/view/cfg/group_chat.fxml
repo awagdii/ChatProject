@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" prefHeight="254.0" prefWidth="257.0" styleClass="mainFxmlClass" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/com/style/group_chat.css" />
+    </stylesheets>
+   <children>
+      <ListView fx:id="onlineFriends" layoutX="9.0" layoutY="3.0" prefHeight="248.0" prefWidth="240.0" />
+   </children>
+</fx:root>

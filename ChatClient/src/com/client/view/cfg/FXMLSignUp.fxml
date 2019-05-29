@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="SignUp" prefHeight="647.0" prefWidth="367.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.client.view.controller.FXMLSignUpController">
+        <stylesheets>
+        <URL value="@/com/style/SignUp.css" />
+    </stylesheets>
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+        <Label fx:id="firstNameLabel" layoutX="16.0" layoutY="182.0" prefHeight="17.0" prefWidth="86.0" text="First Name" textFill="#07010d">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="firstNameField" layoutX="144.0" layoutY="177.0" prefHeight="25.0" prefWidth="207.0" promptText="First Name">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </TextField>
+        <Label fx:id="lastNameLabel" layoutX="19.0" layoutY="235.0" prefHeight="17.0" prefWidth="69.0" text="Last Name" textFill="#0d0117">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="emailLabel" layoutX="16.0" layoutY="293.0" text="Email Address" textFill="#100222">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="passwardLabel" layoutX="18.0" layoutY="349.0" text="Password" textFill="#100222">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="genderLabel" layoutX="25.0" layoutY="473.0" text="Gender" textFill="#100222">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="lastNameField" layoutX="144.0" layoutY="230.0" prefHeight="30.0" prefWidth="207.0" promptText="Last Name" />
+        <TextField fx:id="emailField" layoutX="144.0" layoutY="285.0" prefHeight="30.0" prefWidth="207.0" promptText="Email" />
+        <TextField fx:id="passwordField" layoutX="144.0" layoutY="341.0" prefHeight="30.0" prefWidth="207.0" promptText="Password" />
+        <RadioButton fx:id="maleRadio" layoutX="147.0" layoutY="473.0" mnemonicParsing="false" text="Male">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="femaleRadio" layoutX="264.0" layoutY="473.0" mnemonicParsing="false" text="Female" textFill="#180225">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </RadioButton>
+        <Button fx:id="signUpButton" layoutX="248.0" layoutY="550.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="87.0" text="SignUp" textFill="#090114">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Label fx:id="validationLabel" layoutX="14.0" layoutY="565.0" prefHeight="30.0" prefWidth="238.0" textFill="#075290">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="150.0" fitWidth="134.0" layoutX="122.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="/img/HipChatIcon.png" />
+            </image>
+        </ImageView>
+      <Label layoutX="20.0" layoutY="410.0" prefHeight="20.0" prefWidth="56.0" text="Country" textFill="#2f0101">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="country" layoutX="144.0" layoutY="408.0" prefHeight="25.0" prefWidth="207.0" promptText="Select Your Country" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<GridPane maxHeight="-Infinity"  maxWidth="-Infinity" minHeight="60.0" minWidth="300.0" prefHeight="60.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/com/style/request.css"/>
+    </stylesheets>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="349.0" minWidth="10.0" prefWidth="80.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="403.0" minWidth="10.0" prefWidth="84.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="403.0" minWidth="10.0" prefWidth="87.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="403.0" minWidth="10.0" prefWidth="85.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <Label fx:id="labelName" prefHeight="21.0" prefWidth="68.0" text="name" GridPane.columnIndex="1" />
+        <ImageView fx:id="imageViewPicture" fitHeight="55.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="acceptButton" maxHeight="31.0" maxWidth="76.0" prefHeight="31.0" prefWidth="76.0" text="Accept" GridPane.columnIndex="2" />
+      <Button fx:id="rejectButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="74.0" text="Reject" GridPane.columnIndex="3" />
+    </children>
+</GridPane>

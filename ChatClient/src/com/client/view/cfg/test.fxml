@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.FXCollections ?>
+
+<fx:root id="AnchorPane" prefHeight="606.0" prefWidth="600.0" styleClass="mainFxmlClass" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+ <stylesheets>
+        <URL value="@/com/style/contact_list.css" />
+    </stylesheets>    
+    <children>
+      <TabPane fx:id="tabPane" layoutX="6.0" layoutY="264.0" prefHeight="346.0" prefWidth="366.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="contactTab" text="Contact List                ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="contactListview" layoutY="1.0" prefHeight="315.0" prefWidth="366.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="requestTab" text="Show Requests              ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ListView fx:id="requestListview" layoutX="-2.0" prefHeight="315.0" prefWidth="366.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <ImageView fitHeight="83.0" fitWidth="95.0" layoutX="20.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" />
+    <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu fx:id="file" mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem fx:id="logout" mnemonicParsing="false" text="Log out" />
+              <MenuItem fx:id="close" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu fx:id="help" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="about" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="myImage" fitHeight="110.0" fitWidth="113.0" layoutX="11.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="searchField" layoutX="2.0" layoutY="216.0" prefHeight="31.0" prefWidth="166.0" promptText="Search..." />
+      <VBox layoutX="129.0" layoutY="41.0" prefHeight="110.0" prefWidth="100.0">
+         <children>
+            <Label fx:id="name" prefHeight="30.0" prefWidth="95.0" text="Name" />
+            <Label fx:id="gender" prefHeight="31.0" prefWidth="72.0" text="Gender" />
+            <ComboBox fx:id="statusComboBox" prefHeight="31.0" prefWidth="129.0" />
+         </children>
+      </VBox>
+      <Button fx:id="addButton" layoutX="179.0" layoutY="216.0" mnemonicParsing="false" text="Add" />
+      <Button fx:id="changeImage" layoutX="20.0" layoutY="169.0" mnemonicParsing="false" text="change Image" />
+      <Button fx:id="refreshButton" layoutX="203.0" layoutY="57.0" mnemonicParsing="false" text="Refresh" />
+    </children>
+</fx:root>

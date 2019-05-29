@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" prefHeight="326.0" prefWidth="589.0" style="-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);;" styleClass="splash_screen" stylesheets="@../../../style/client_login.css" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="332.0" fitWidth="612.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true" styleClass="splash_screen">
+         <image>
+            <Image url="@../../../../img/background.jpg" />
+         </image>
+         <effect>
+            <Glow level="0.49" />
+         </effect></ImageView>
+      <ImageView fx:id="ivMark" fitHeight="150.0" fitWidth="200.0" layoutX="44.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/mark.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="62.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../img/word.png" />
+         </image>
+         <effect>
+            <Bloom />
+         </effect>
+      </ImageView>
+   </children>
+   <effect>
+      <Glow level="0.0" />
+   </effect>
+</fx:root>

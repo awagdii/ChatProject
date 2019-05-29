@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" fx:id="mainScreen" prefHeight="639.0" prefWidth="327.0" styleClass="mainFxmlClass" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/com/style/admin_login.css" />
+    </stylesheets> 
+    <children>
+        <BorderPane fx:id="hbMenu" prefHeight="25.0" prefWidth="327.0" />
+        <AnchorPane fx:id="apLeftSide" layoutX="14.0" layoutY="45.0" prefHeight="594.0" prefWidth="280.0" stylesheets="@../../../style/admin_login.css">
+            <children>
+                <Label layoutX="14.0" layoutY="155.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Turn Server On/Off">
+                    <font>
+                        <Font size="26.0" />
+                    </font>
+                </Label>
+                <VBox fx:id="vbToggleButtonContainer" layoutX="152.0" layoutY="126.0" prefHeight="50.0" prefWidth="100.0" />
+                <Label fx:id="textServerStatus" layoutX="85.0" layoutY="64.0" styleClass="label_title" stylesheets="@../../../style/admin_login.css" text="Server is">
+                    <font>
+                        <Font size="32.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</fx:root>

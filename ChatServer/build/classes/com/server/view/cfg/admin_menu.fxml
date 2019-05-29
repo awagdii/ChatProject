@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" fx:id="mainScreen" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="750.0" styleClass="mainFxmlClass" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@/com/style/admin_login.css" />
+    </stylesheets> 
+    <children>
+        <MenuBar prefHeight="25.0" prefWidth="330.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="iChat">
+                    <items>
+                        <MenuItem fx:id="miAddNewAdmin" mnemonicParsing="false" text="Add New Admin">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="N" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="miAddNewUsers" mnemonicParsing="false" text="Add New Users">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="U" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                        <MenuItem fx:id="miLogout" mnemonicParsing="false" text="Logout">                            
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="L" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                        <MenuItem fx:id="miExit" mnemonicParsing="false" text="Exit">
+                            <accelerator>
+                                <KeyCodeCombination alt="UP" code="E" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                            </accelerator>
+                        </MenuItem>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Statistics">
+                    <items>
+                        <MenuItem fx:id="miViewStatisticsReports" mnemonicParsing="false" text="View Statistics Reports">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                    </items>
+                </Menu>
+            <Menu mnemonicParsing="false" text="Send Announcements">
+               <items>
+                  <MenuItem fx:id="announcemi" mnemonicParsing="false" text="Send Announcement">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="A" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+               </items>
+            </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id="miAbout" mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</fx:root>

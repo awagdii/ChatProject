@@ -1,0 +1,112 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Feb 2, 2016, 9:53:33 PM
+    Author     : Nada
+*/
+.mainFxmlClass {
+    -fx-background-image: url("/img/clouds.jpg");
+    -fx-text-color: #ffffff;
+}
+.tab-pane .tab:hover
+{
+    -fx-background-color: #dcf4fd;
+}
+.tab-pane .tab:selected
+{
+    -fx-background-radius: 30;
+    -fx-background-color:  #c4edfb;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: black;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: black;
+
+}
+
+.text-field {
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #cccccc;
+}
+
+.text-field:focused {
+    -fx-background-color: #dcf4fd ,  #dcf4fd ,  #dcf4fd;
+    -fx-text-fill: black;
+    -fx-prompt-text-fill: #cccccc;
+}
+.button {
+    -fx-font-size: 13.0px;
+    -fx-base: #00a7d4;
+    -fx-background: #e5f3f6;
+    -fx-focus-color: #0093FF;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-text-base-color: #FFFFFF;
+    -fx-background-color:#00a7d4;
+    
+    -fx-border-radius: 20 20 20 20;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+    -fx-padding: 10;
+    
+    -fx-inner-border: linear-gradient(to bottom, derive(-fx-color,73.6%) 0%, derive(-fx-color,29.200000000000003%) 100%);
+    -fx-body-color: linear-gradient( to bottom, derive(-fx-color, 34.0%) 0%, derive(-fx-color, -18.0%) 100%);
+    -fx-background-insets: 0px;
+    -fx-background-radius: 0px;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em; /* 2 10 3 10 */
+    -fx-text-fill: -fx-text-base-color;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+    -fx-background-radius: 30;
+}
+
+.button:focused {
+    -fx-color:#00a7d4;
+    -fx-background-color:#ED9C28, #00a7d4;
+    -fx-background-insets: -1.4, 0, 1, 2;
+    -fx-background-radius: 0;
+}
+
+.button:hover {
+    -fx-focus-color: #FF0000;
+    -fx-background-color: #ED9C28, #0187ab;
+}
+.combo-box{
+    -fx-background-radius:30;
+   // -fx-background: #e5f3f6;
+    -fx-focus-color: #0093FF;
+    -fx-text-color:white;
+    -fx-background-color:#00a7d4;
+}
+.combo-box .list-cell 
+{
+   // -fx-background: #e5f3f6;
+    -fx-background-color: #00a7d4;
+    -fx-padding: 3 0 2 7;
+    -fx-cell-size: 1.66667em; 
+    -fx-text-color:white;
+    
+}
+
+.combo-box-popup .list-view 
+{
+    -fx-background-color: #00a7d4;
+     -fx-text-color:white;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 8, 0.0 , 0 , 0 );
+}    
+.combo-box:text{
+    -fx-background: #e5f3f6;
+    -fx-focus-color: #0093FF;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-text-base-color: #FFFFFF;
+    -fx-background-color:#00a7d4;
+}
+
+

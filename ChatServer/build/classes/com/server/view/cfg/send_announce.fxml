@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<fx:root id="AnchorPane" prefHeight="197.0" prefWidth="320" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField id="myEditText" fx:id="editText" layoutX="27.0" layoutY="31.0" prefHeight="97.0" prefWidth="269.0" />
+      <Button id="myBtn" fx:id="sendBtn" layoutX="134.0" layoutY="147.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="60.0" text="Send" />
+   </children>
+</fx:root>
